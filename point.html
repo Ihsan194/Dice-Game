@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive Dice Game with Replay Feature">
+    <meta name="author" content="Your Name">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="gameUI" class="container">
+        <h1>🎲 Dice Game 🎲</h1>
+        <div class="score-container">
+            <p>Dice: <span id="dice">-</span></p>
+            <p>Current Score: <span id="currentScore">0</span></p>
+            <p>Total Score: <span id="score">0</span></p>
+            <p>High Score: <span id="highScore">0</span></p>
+        </div>
+        <button id="rollButton" onclick="showPoint()">Roll Dice</button>
+    </div>
+
+    <div id="replayButtonContainer" style="display: none;" class="container">
+        <h1>Game Over! 🛑</h1>
+        <p>Your final score: <span id="finalScore">0</span></p>
+        <button id="replayButton" onclick="replay()">Play Again</button>
+    </div>
+    <script src="./point.game.js"></script>
+</body>
+</html>
